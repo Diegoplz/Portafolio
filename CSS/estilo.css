@@ -1,0 +1,442 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:'Inter',sans-serif;
+
+    background:#0f172a;
+
+    color:white;
+
+}
+
+header{
+
+    width:100%;
+
+    position:fixed;
+
+    top:0;
+
+    backdrop-filter:blur(12px);
+
+    background:rgba(15,23,42,.8);
+
+    z-index:1000;
+
+}
+
+.navbar{
+
+    width:90%;
+
+    height:80px;
+
+    margin:auto;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+.logo{
+
+    color:#3b82f6;
+
+}
+
+.navbar ul{
+
+    display:flex;
+
+    list-style:none;
+
+}
+
+.navbar li{
+
+    margin-left:35px;
+
+}
+
+.navbar a{
+
+    color:white;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+}
+
+.navbar a:hover{
+
+    color:#3b82f6;
+
+}
+
+.hero{
+
+    width:90%;
+
+    margin:auto;
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+.hero-left{
+
+    width:55%;
+
+}
+
+.saludo{
+
+    color:#94a3b8;
+
+    font-size:20px;
+
+}
+
+.hero h1{
+
+    font-size:72px;
+
+    margin:10px 0;
+
+}
+
+.hero span{
+
+    color:#3b82f6;
+
+}
+
+.hero h2{
+
+    color:#60a5fa;
+
+    height:45px;
+
+}
+
+.descripcion{
+
+    margin-top:30px;
+
+    line-height:32px;
+
+    max-width:600px;
+
+    color:#cbd5e1;
+
+}
+
+.botones{
+
+    margin-top:45px;
+
+}
+
+.btn{
+
+    padding:15px 35px;
+
+    background:#3b82f6;
+
+    color:white;
+
+    text-decoration:none;
+
+    border-radius:8px;
+
+    margin-right:20px;
+
+}
+
+.btn2{
+
+    padding:15px 35px;
+
+    border:2px solid #3b82f6;
+
+    color:#3b82f6;
+
+    text-decoration:none;
+
+    border-radius:8px;
+
+}
+
+.circulo{
+
+    width:320px;
+
+    height:320px;
+
+    border-radius:50%;
+
+    background:linear-gradient(45deg,#2563eb,#60a5fa);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:120px;
+
+    box-shadow:0 0 60px rgba(59,130,246,.5);
+
+}
+
+/* =======================
+   PROYECTOS
+======================= */
+
+.projects{
+
+    width:90%;
+    margin:100px auto;
+
+}
+
+.projects h2{
+
+    text-align:center;
+    font-size:45px;
+    margin-bottom:15px;
+
+}
+
+.subtitulo{
+
+    text-align:center;
+    color:#94A3B8;
+    margin-bottom:60px;
+
+}
+
+.project-grid{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:30px;
+
+}
+
+.card{
+
+    background:#1E293B;
+    border-radius:20px;
+    overflow:hidden;
+    transition:.35s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-12px);
+
+    box-shadow:0 15px 35px rgba(59,130,246,.25);
+
+}
+
+.card-img{
+
+    height:180px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:70px;
+
+    background:linear-gradient(135deg,#2563EB,#3B82F6);
+
+}
+
+.card-content{
+
+    padding:25px;
+
+}
+
+.card-content h3{
+
+    margin-bottom:15px;
+
+}
+
+.card-content p{
+
+    color:#CBD5E1;
+
+    line-height:28px;
+
+}
+
+.tecnologias{
+
+    margin:25px 0;
+
+}
+
+.tecnologias span{
+
+    display:inline-block;
+
+    background:#334155;
+
+    padding:8px 14px;
+
+    border-radius:20px;
+
+    margin-right:10px;
+
+    margin-bottom:10px;
+
+    font-size:14px;
+
+}
+
+.botones-card{
+
+    display:flex;
+
+    gap:15px;
+
+}
+
+.botones-card a{
+
+    flex:1;
+
+    text-align:center;
+
+    text-decoration:none;
+
+    color:white;
+
+    background:#3B82F6;
+
+    padding:12px;
+
+    border-radius:8px;
+
+    transition:.3s;
+
+}
+
+.botones-card a:hover{
+
+    background:#2563EB;
+
+}
+
+/* ===================
+   SOBRE MI
+=================== */
+
+.about{
+
+    width:90%;
+    margin:120px auto;
+
+    display:grid;
+
+    grid-template-columns:350px 1fr;
+
+    gap:80px;
+
+    align-items:center;
+
+}
+
+.photo{
+
+    width:300px;
+
+    height:300px;
+
+    border-radius:50%;
+
+    background:linear-gradient(135deg,#3B82F6,#60A5FA);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:90px;
+
+    font-weight:bold;
+
+    box-shadow:0 0 40px rgba(59,130,246,.5);
+
+}
+
+.about h2{
+
+    font-size:45px;
+
+    margin-bottom:30px;
+
+}
+
+.about p{
+
+    color:#CBD5E1;
+
+    line-height:32px;
+
+    margin-bottom:20px;
+
+}
+
+.stats{
+
+    display:flex;
+
+    gap:40px;
+
+    margin-top:40px;
+
+}
+
+.stat{
+
+    text-align:center;
+
+}
+
+.stat h3{
+
+    font-size:40px;
+
+    color:#3B82F6;
+
+}
+
+.stat span{
+
+    color:#94A3B8;
+
+}
