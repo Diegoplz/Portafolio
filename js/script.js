@@ -63,3 +63,5 @@ function borrar(){
 }
 
 escribir();
+
+document.getElementById("year").textContent = new Date().getFullYear();
