@@ -62,6 +62,26 @@ function borrar(){
 
 }
 
-escribir();
+document.addEventListener("DOMContentLoaded", () => {
 
-document.getElementById("year").textContent = new Date().getFullYear();
+    escribir();
+
+    const year = document.getElementById("year");
+    if (year) {
+        year.textContent = new Date().getFullYear();
+    }
+
+    const menuToggle = document.getElementById("menu-toggle");
+    const menu = document.getElementById("menu");
+
+    menuToggle.addEventListener("click", () => {
+        menu.classList.toggle("active");
+    });
+
+    document.querySelectorAll("#menu a").forEach(enlace => {
+        enlace.addEventListener("click", () => {
+            menu.classList.remove("active");
+        });
+    });
+
+});

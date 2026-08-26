@@ -65,36 +65,60 @@
 }
 
 /* ===========================
-   MÓVIL
+MÓVIL
 =========================== */
 
 @media (max-width:768px){
 
-    .navbar{
+.navbar{
 
-        flex-direction:column;
+    flex-direction:row;
 
-        height:auto;
+    justify-content:space-between;
 
-        padding:20px 0;
+    align-items:center;
 
-    }
+    height:80px;
 
-    .navbar ul{
+}
 
-        flex-direction:column;
+.menu-toggle{
 
-        align-items:center;
+    display:block;
 
-        margin-top:20px;
+}
 
-    }
+.navbar ul{
 
-    .navbar li{
+    display:none;
 
-        margin:12px 0;
+    position:absolute;
 
-    }
+    top:80px;
+
+    left:0;
+
+    width:100%;
+
+    background:#0F172A;
+
+    flex-direction:column;
+
+    padding:20px 0;
+
+}
+
+.navbar ul.active{
+
+    display:flex;
+
+}
+
+.navbar li{
+
+    margin:15px 0;
+
+}
 
     .hero{
 
