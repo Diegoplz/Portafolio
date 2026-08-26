@@ -1,8 +1,42 @@
 /* ===========================
-   TABLET
+TABLET
 =========================== */
 
 @media (max-width:1024px){
+    .contact{
+
+    width:95%;
+    max-width:900px;
+    margin:auto;
+
+}
+
+.contact-links{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:30px;
+
+    justify-content:center;
+
+}
+
+.contact-card p{
+
+    overflow-wrap:break-word;
+    
+}
+
+.contact-card{
+
+    
+    padding:40px 30px;
+
+}
+
+
 
     .hero{
 
@@ -210,6 +244,42 @@ MÓVIL
         grid-template-columns:1fr;
 
     }
+
+    .contact{
+
+    width:92%;
+    margin:100px auto;
+
+}
+
+.contact-card{
+
+    width:100%;
+    padding:35px 25px;
+
+}
+
+.contact-card p{
+
+    overflow-wrap: break-word;
+    word-break: break-word;
+    font-size:30px;
+
+}
+
+.contact-text{
+
+    font-size:18px;
+    line-height:34px;
+    padding:0 10px;
+
+}
+
+.contact h2{
+
+    font-size:48px;
+
+}
 
     .footer-icons a{
 
